@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Google Glass</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script language="javascript" src="_javascript/funcoes.js"> </script>
+
+	<link rel="stylesheet" type="text/css" href="_css/fotos.css" media="screen" />
+
+	<link rel="icon" href="_imagens/browser.png">
+</head>
+<style>
+	@charset: "utf-8";
+	@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Titillium+Web');
+
+	@font-face {
+		font-family: 'fonte';
+		src: url("../_fonts/bubblegum-sans-regular.otf");
+	}
+
+	p {
+		text-align: justify;
+		text-indent: 50px;
+		background-image: ;
+	}
+
+	a {
+		color: #606060;
+		text-indent: nane;
+	}
+
+	.va {
+		color: #606060;
+		background-color: #fffffff;
+	}
+
+	body {
+		background-color: #dddddd;
+		color: rgba(0, 0, 0, 1);
+		font-family: Arial, sans-serif;
+	}
+
+	div#interface {
+		width: 1150px;
+		background-color: white;
+		margin: -30px auto 0px auto;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+		padding: 10px;
+	}
+
+	span {
+		font-weight: 900;
+	}
+
+	h1#man {
+		display: nane;
+		color: transparent black;
+		position: relative;
+	}
+
+	header#cabecalho img#icone {
+		position: absolute;
+		left: 542px;
+		top: 40px;
+		width: 600px;
+		height: 165px;
+	}
+
+	header#cabecalho h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	header#cabecalho h2 {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 15pt;
+		color: #888888;
+		padding: 0px;
+		margin-top: 0px;
+	}
+
+	header#cabecalho {
+		border-bottom: 1px #606060 solid;
+		height: 190px;
+		background: url("_imagens/logo.png") no-repeat 0px 100px;
+	}
+
+	/* Formatação imagem Legenda*/
+	.foto-legenda {
+		position: relative;
+		/*border: 8px solid white;*/
+		box-shadow: 1px 1px 4px black;
+	}
+
+	.foto-legenda img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.foto-legenda figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0, 0, 0, .4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}
+
+	.foto-legenda:hover figcaption {
+		opacity: 1;
+	}
+
+	/*formatação do menu*/
+	nav#menu {
+		display: block;
+	}
+
+	nav#menu ul {
+		list-style: nane;
+		text-transform: uppercase;
+		position: absolute;
+		top: -20px;
+		left: 500px;
+	}
+
+	nav#menu li {
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 1s;
+	}
+
+	nav#menu li:hover {
+		background-color: #606060;
+	}
+
+	#menu h1 {}
+
+	nav#menu a {
+		color: #0000;
+	}
+
+	nav#menu a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	section#corpo {
+		display: block;
+		width: 600px;
+		float: left;
+		border-right: 1px solid #606060;
+		padding: 5px;
+		padding-right: 20px;
+	}
+
+	article#noticia h2 {
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	header#cabeclho-arti h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom: 0px;
+		margin-top: 0px;
+
+	}
+
+	header#cabeclho-arti h2 {
+		font-size: 13pt;
+		color: #cecece;
+		background-color: #ffffff;
+		margin: 0px;
+	}
+
+	h3 {
+		font-size: 12px;
+		color: #606060;
+	}
+
+	.dir {
+		text-align: right;
+	}
+
+	table#tabelaspac {
+		border: 1px solid #606060;
+		border-spacing: 0px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	table#tabelaspac td {
+		border: 1px solid #606060;
+		padding: 10px;
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.ce {
+		color: #ffffff;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+	}
+
+	.cd {
+		background-color: #cecece;
+	}
+
+	table#tabelaspac caption {
+		color: #8888;
+		font-size: 15pt;
+		font-weight: bolder;
+	}
+
+	caption span {
+		display: block;
+		float: right;
+		color: #000000;
+		font-size: 8pt;
+		margin-top: 10px;
+	}
+
+	aside#lateral {
+		display: block;
+		width: 500px;
+		float: right;
+		padding: 10px;
+		background-color: #dddddd;
+		margin-top: 10px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	}
+
+	aside#lateral img {
+		padding: 0px;
+		width: 500px;
+		margin-left: -40px;
+		/*border: 8px solid white;*/
+		border: none;
+	}
+
+	aside#lateral h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-top: 0px;
+	}
+
+	aside#lateral h2 {
+		background-color: #606060;
+		font-size: 15pt;
+		color: #ffffff;
+		padding: 10px;
+	}
+
+	footer#rodape {
+		clear: both;
+		border-top: 1px solid #606060;
+		margin-top: 54px;
+
+	}
+
+	footer#rodape p {
+		text-align: center;
+	}
+
+
+	.subnav {
+		float: left;
+		overflow: hidden;
+	}
+
+	.subnav .subnavbtn {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.navbar a:hover,
+	.subnav:hover .subnavbtn {
+		background-color: red;
+	}
+
+	.subnav-content {
+		display: none;
+		position: absolute;
+		left: 0;
+		background-color: red;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.subnav-content a {
+		float: left;
+		color: white;
+		text-decoration: none;
+	}
+
+	.subnav-content a:hover {
+		background-color: #eee;
+		color: black;
+	}
+
+	.subnav:hover .subnav-content {
+		display: block;
+	}
+
+
+
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-top: -100px;
+		margin-left: 580px;
+		margin-right: 54px;
+		overflow: hidden;
+		background-color: #cecece;
+		font-family: 'fonte', sans-serif;
+		font-size: 15pt;
+		font-weight: bold;
+	}
+
+	ul.topnav li {
+		float: left;
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+	}
+
+	ul.topnav li a {
+		display: inline-block;
+		color: rgba(0, 0, 0, 1);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	ul.topnav li a:hover {
+		background-color: #8888;
+	}
+
+	ul.topnav li.icon {
+		display: none;
+	}
+
+	@media screen and (max-width:280px) {
+		ul.topnav li:not(:first-child) {
+			display: none;
+		}
+
+		ul.topnav li.icon {
+			float: right;
+			display: inline-block;
+		}
+	}
+
+	@media screen and (max-width:180px) {
+		ul.topnav.responsive {
+			position: relative;
+
+		}
+
+		ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		ul.topnav.responsive li {
+			float: none;
+			display: inline;
+		}
+
+		ul.topnav.responsive li a {
+			display: block;
+			text-align: left;
+		}
+	}
+
+
+
+
+
+
+	/* Add padding BETWEEN each column */
+	.row,
+	.row>.column {
+		padding: 8px;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+		float: left;
+		width: 30%;
+		display: none;
+		/* Hide all elements by default */
+	}
+
+	/* Clear floats after rows */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Content */
+	.content {
+		background-color: white;
+		padding: 8px;
+
+	}
+
+	/* The "show" class is added to the filtered elements */
+	.show {
+		display: block;
+	}
+
+	/* Style the buttons */
+	.btn {
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: white;
+		cursor: pointer;
+	}
+
+	.btn:hover {
+		background-color: #ddd;
+	}
+
+	.btn.active {
+		background-color: #666;
+		color: white;
+	}
+
+	.videos {
+		border: none;
+		height: auto;
+	}
+
+
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.row>.column {
+		padding: 8px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.column {
+		float: left;
+		width: 25%;
+	}
+
+	/* The Modal (background) */
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		max-width: 1200px;
+	}
+
+	/* The Close Button */
+	.close {
+		color: white;
+		position: absolute;
+		top: 10px;
+		right: 25px;
+		font-size: 35px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #999;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+	.cursor {
+		cursor: pointer;
+	}
+
+	/* Next & previous buttons */
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+
+	img {
+		margin-bottom: -4px;
+	}
+
+	.caption-container {
+		text-align: center;
+		background-color: black;
+		padding: 2px 16px;
+		color: white;
+		width: auto;
+		height: auto;
+	}
+
+	.demo {
+		opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+		opacity: 1;
+	}
+
+	img.hover-shadow {
+		transition: 0.3s;
+	}
+
+	.hover-shadow:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	< !-------->#myImg {
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	#myImg:hover {
+		opacity: 0.7;
+	}
+
+	/* The Modal (background) */
+	.modal {
+		display: none;
+		/* Hidden by default */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		padding-top: 100px;
+		/* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Full width */
+		height: 100%;
+		/* Full height */
+		overflow: auto;
+		/* Enable scroll if needed */
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 0, 0.9);
+		/* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content,
+	#caption {
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+		from {
+			-webkit-transform: scale(0)
+		}
+
+		to {
+			-webkit-transform: scale(1)
+		}
+	}
+
+	@keyframes zoom {
+		from {
+			transform: scale(0)
+		}
+
+		to {
+			transform: scale(1)
+		}
+	}
+
+	/* The Close Button */
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px) {
+		.modal-content {
+			width: 100%;
+		}
+	}
+</style>
+
+<body>
+	<div id="interface">
+
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Igreja Evangelica</h1>
+				<h2>Assembleia de Deus Pentecostal da Guarda</h2>
+			</hgroup>
+
+
+			<ul class="topnav">
+				<li><a href="index.html">Home</a></li>
+				<li class="subnavbtn" class="subnav"><a href="specs.html">Sobre</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="publicacao.html">Publicações</a></li>
+				<li><a href="fale-conosco.html">Contactos</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:10px;" onclick="myFunction()">☰</a>
+				</li>
+			</ul>
+		</header>
+
+		<section id="corpo2">
+			<article id="noticia">
+				<header id="cabeclho-arti">
+
+					<hgroup>
+						<h1>Galeria das Atividades </h1>
+						<h3 class="dir">Atualizado em 20/Maio/2020</h3>
+					</hgroup>
+				</header>
+				<!------------------>
+				<div id="myBtnContainer">
+					<button class="btn active" onclick="filterSelection('all')">Mostrar Todos</button>
+					<button class="btn" onclick="filterSelection('reflexões')"> Reflexões</button>
+					<button class="btn" onclick="filterSelection('atividades')"> Atividades</button>
+					<button class="btn" onclick="filterSelection('videos')"> Videos</button>
+				</div>
+
+				<!-- Portfolio Gallery Grid --
+				<div class="row">
+
+					<div class="column ">
+						<div class="content">
+							<iframe
+								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F637847960009452%2F&show_text=0&width=560"
+								width="310px" height="300px" style="border:none;overflow:hidden;width:100%;"
+								scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+						</div>
+					</div>
+
+					<div class="column nature">
+						<div class="content">
+							<img src="./_imagens/galeria1.png" alt="Lights" style="width:100%">
+
+						</div>
+					</div>
+					<div class="column nature">
+						<div class="content">
+							<img src="./_imagens/galeria1.png" alt="Nature" style="width:100%">
+
+						</div>
+					</div>
+
+					<div class="column cars">
+						<div class="content">
+							<img src="./_imagens/galeria1.png" alt="Car" style="width:100%">
+
+						</div>
+					</div>
+					<div class="column cars">
+						<div class="content">
+							<img src="./_imagens/galeria1.png" alt="Car" style="width:100%">
+
+						</div>
+					</div>
+
+					<!-- END GRID --
+
+
+				</div>-->
+				<!----------->
+				<div class="row">
+					<div class="column atividades">
+						<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/82995490_2645616562337069_4502562186610081792_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=Rqf04L1K1vMAX9lFsuZ&_nc_oc=AQnvZaPmwaJFzjLkYu7FV0Cy5QlMq6byS_xWwDpLmDqySgCNhZEwOKPWBR7W4SycaL8&_nc_ht=scontent.flis9-1.fna&oh=7dfb7caa0e3a7184b8438d4f59eb7dfb&oe=5F480646"
+							style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="column atividades">
+						<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/73018611_2558557847709608_5882011738265616384_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=oW6rhY5RqwoAX--pUjs&_nc_ht=scontent.flis9-1.fna&oh=2c2e5dd6d0234ac3300a7249be500385&oe=5F4836EB"
+							style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="column reflexões">
+						<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/p720x720/106908651_2794607490771308_5160984945835317735_o.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=YSYEN5RUiuwAX_5_SLq&_nc_ht=scontent.flis9-1.fna&_nc_tp=6&oh=33375669830d111b6590008efd73c473&oe=5F459E29"
+							style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="column videos">
+						<img src="./_imagens/video1.png" style="width:100%; height:200px;"
+							onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+
+					<div class="column reflexões">
+						<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/97009868_2749366465295411_3511902356012793856_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=tT8wMSvD3nkAX8AwBQO&_nc_ht=scontent.flis9-1.fna&oh=87203847e7d648f71364caaae19048f3&oe=5F471B6C"
+							style="width:100%; height:200px;" onclick="openModal();currentSlide(5)"
+							class="hover-shadow cursor">
+					</div>
+					<div class="column videos">
+						<img src="./_imagens/video2.png" style="width:100%; height:200px;"
+							onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+					</div>
+					<div class="column videos">
+						<img src="_imagens/video3.PNG" style="width:100%; height:200px;"
+							onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+					</div>
+					<div class="column atividades">
+						<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t31.0-8/s960x960/29064143_2140715682827162_5967734014026278208_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=J_0_g5Z_DJMAX8fVKgo&_nc_oc=AQnf6djDKtB7QO9-qHHZsUO6rY3hCYIj0srvpXV4zE91wbGOl1DPkCtPyi0R99K7UBA&_nc_ht=scontent.flis9-1.fna&_nc_tp=7&oh=7730b8bd1785d7ba53fab2a3e215d447&oe=5F4870D8"
+							style="width:100%; height:200px;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+					</div>
+				</div>
+				<!------>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 8</div>
+							<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/82995490_2645616562337069_4502562186610081792_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=Rqf04L1K1vMAX9lFsuZ&_nc_oc=AQnvZaPmwaJFzjLkYu7FV0Cy5QlMq6byS_xWwDpLmDqySgCNhZEwOKPWBR7W4SycaL8&_nc_ht=scontent.flis9-1.fna&oh=7dfb7caa0e3a7184b8438d4f59eb7dfb&oe=5F480646"
+								style="width:100%; height: 400px;">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 8</div>
+							<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/73018611_2558557847709608_5882011738265616384_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=oW6rhY5RqwoAX--pUjs&_nc_ht=scontent.flis9-1.fna&oh=2c2e5dd6d0234ac3300a7249be500385&oe=5F4836EB"
+								style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 8</div>
+							<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/p720x720/106908651_2794607490771308_5160984945835317735_o.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=YSYEN5RUiuwAX_5_SLq&_nc_ht=scontent.flis9-1.fna&_nc_tp=6&oh=33375669830d111b6590008efd73c473&oe=5F459E29"
+								style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 8</div>
+							<iframe class="demo cursor"
+								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F637847960009452%2F&show_text=0&width=560"
+								width="100%" height="490px" style="border:none;overflow:hidden;width:100%;"
+								scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"
+								onclick="currentSlide(4)" alt="Northern Lights"></iframe>
+
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 8</div>
+							<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t1.0-9/97009868_2749366465295411_3511902356012793856_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=tT8wMSvD3nkAX8AwBQO&_nc_ht=scontent.flis9-1.fna&oh=87203847e7d648f71364caaae19048f3&oe=5F471B6C"
+								style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 8</div>
+							<iframe
+								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F605790080310334%2F&show_text=0&width=560"
+								width="100%" height="390px" style="border:none;overflow:hidden" scrolling="no"
+								frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">7 / 8</div>
+							<iframe
+								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F643725093088276%2F&show_text=0&width=560"
+								width="100%" height="390px" style="border:none;overflow:hidden" scrolling="no"
+								frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">8 / 8</div>
+							<img src="https://scontent.flis9-1.fna.fbcdn.net/v/t31.0-8/s960x960/29064143_2140715682827162_5967734014026278208_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=J_0_g5Z_DJMAX8fVKgo&_nc_oc=AQnf6djDKtB7QO9-qHHZsUO6rY3hCYIj0srvpXV4zE91wbGOl1DPkCtPyi0R99K7UBA&_nc_ht=scontent.flis9-1.fna&_nc_tp=7&oh=7730b8bd1785d7ba53fab2a3e215d447&oe=5F4870D8"
+								style="width:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!--<div class="caption-container">
+							<p id="caption"></p>
+						</div>-->
+
+						<!--
+						<div class="column">
+							<img class="demo cursor" src="./_imagens/galeria1.png" style="width:100%"
+								onclick="currentSlide(1)" alt="Nature and sunrise">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="./_imagens/galeria2.png" style="width:100%"
+								onclick="currentSlide(2)" alt="Snow">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="./_imagens/galeria3.png" style="width:100%"
+								onclick="currentSlide(3)" alt="Mountains and fjords">
+						</div>
+						<div class="column">
+								<iframe class="demo cursor"
+								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F637847960009452%2F&show_text=0&width=560"
+								width="310px" height="300px" style="border:none;overflow:hidden;width:100%;"
+								scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" onclick="currentSlide(4)" alt="Northern Lights"></iframe>
+						</div>-->
+					</div>
+				</div>
+
+
+			</article>
+
+
+
+
+		</section>
+		<footer id="rodape">
+			<p>Todos os direitos reservados © 2020 Assembleia de Deus Pentecostal da Guarda.<br>
+				<a href="https://www.facebook.com/ad.guarda/" target="_blank">Facebook</a> |
+				<a href="" target="_blank">Instagram</a> |
+				<a href="" target="_blank">Youtube</a></p>
+		</footer>
+	</div>
+	<script>
+
+
+
+		/*****/
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("column");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			}
+		}
+
+		function w3AddClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+			}
+		}
+
+		function w3RemoveClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+		//-----------
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assembleia de Deus Pentecostal da Guarda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/js" href="">
+	<link rel="shortcut icon" href="">
+	<link rel="icon" href="_imagens/browser.png">
+	<script language="javascript" src="_javascript/funcoes.js"> </script>
+</head>
+<style>
+	@charset: "utf-8";
+	@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Titillium+Web');
+
+	@font-face {
+		font-family: 'fonte';
+		src: url("../_fonts/bubblegum-sans-regular.otf");
+	}
+
+	p {
+		text-align: justify;
+		text-indent: 50px;
+		background-image: ;
+	}
+
+	a {
+		color: #606060;
+		text-indent: nane;
+	}
+
+	.va {
+		color: #606060;
+		background-color: #fffffff;
+	}
+
+	body {
+		background-color: #dddddd;
+		color: rgba(0, 0, 0, 1);
+		font-family: Arial, sans-serif;
+	}
+
+	div#interface {
+		width: 1150px;
+		background-color: white;
+		margin: -30px auto 0px auto;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+		padding: 10px;
+	}
+
+	span {
+		font-weight: 900;
+	}
+
+	h1#man {
+		display: nane;
+		color: transparent black;
+		position: relative;
+	}
+
+	header#cabecalho img#icone {
+		position: absolute;
+		left: 542px;
+		top: 40px;
+		width: 600px;
+		height: 165px;
+	}
+
+	header#cabecalho h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	header#cabecalho h2 {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 15pt;
+		color: #888888;
+		padding: 0px;
+		margin-top: 0px;
+	}
+
+	header#cabecalho {
+		border-bottom: 1px #606060 solid;
+		height: 190px;
+		background: url("_imagens/logo.png") no-repeat 0px 100px;
+	}
+
+	/* Formatação imagem Legenda*/
+	.foto-legenda {
+		position: relative;
+		/*border: 8px solid white;*/
+		box-shadow: 1px 1px 4px black;
+	}
+
+	.foto-legenda img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.foto-legenda figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0, 0, 0, .4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}
+
+	.foto-legenda:hover figcaption {
+		opacity: 1;
+	}
+
+	/*formatação do menu*/
+	nav#menu {
+		display: block;
+	}
+
+	nav#menu ul {
+		list-style: nane;
+		text-transform: uppercase;
+		position: absolute;
+		top: -20px;
+		left: 500px;
+	}
+
+	nav#menu li {
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 1s;
+	}
+
+	nav#menu li:hover {
+		background-color: #606060;
+	}
+
+	#menu h1 {}
+
+	nav#menu a {
+		color: #0000;
+	}
+
+	nav#menu a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	section#corpo {
+		display: block;
+		width: 600px;
+		float: left;
+		border-right: 1px solid #606060;
+		padding: 5px;
+		padding-right: 20px;
+	}
+
+	article#noticia h2 {
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	header#cabeclho-arti h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom: 0px;
+		margin-top: 0px;
+
+	}
+
+	header#cabeclho-arti h2 {
+		font-size: 13pt;
+		color: #cecece;
+		background-color: #ffffff;
+		margin: 0px;
+	}
+
+	h3 {
+		font-size: 12px;
+		color: #606060;
+	}
+
+	.dir {
+		text-align: right;
+	}
+
+	table#tabelaspac {
+		border: 1px solid #606060;
+		border-spacing: 0px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	table#tabelaspac td {
+		border: 1px solid #606060;
+		padding: 10px;
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.ce {
+		color: #ffffff;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+	}
+
+	.cd {
+		background-color: #cecece;
+	}
+
+	table#tabelaspac caption {
+		color: #8888;
+		font-size: 15pt;
+		font-weight: bolder;
+	}
+
+	caption span {
+		display: block;
+		float: right;
+		color: #000000;
+		font-size: 8pt;
+		margin-top: 10px;
+	}
+
+	aside#lateral {
+		display: block;
+		width: 500px;
+		float: right;
+		padding: 10px;
+		background-color: #dddddd;
+		margin-top: 10px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	}
+
+	aside#lateral img {
+		padding: 0px;
+		width: 500px;
+		margin-left: -40px;
+		/*border: 8px solid white;*/
+		border: none;
+	}
+
+	aside#lateral h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-top: 0px;
+	}
+
+	aside#lateral h2 {
+		background-color: #606060;
+		font-size: 15pt;
+		color: #ffffff;
+		padding: 10px;
+	}
+
+	footer#rodape {
+		clear: both;
+		border-top: 1px solid #606060;
+		text-align
+	}
+
+	footer#rodape p {
+		text-align: center;
+	}
+
+
+	.subnav {
+		float: left;
+		overflow: hidden;
+	}
+
+	.subnav .subnavbtn {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.navbar a:hover,
+	.subnav:hover .subnavbtn {
+		background-color: red;
+	}
+
+	.subnav-content {
+		display: none;
+		position: absolute;
+		left: 0;
+		background-color: red;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.subnav-content a {
+		float: left;
+		color: white;
+		text-decoration: none;
+	}
+
+	.subnav-content a:hover {
+		background-color: #eee;
+		color: black;
+	}
+
+	.subnav:hover .subnav-content {
+		display: block;
+	}
+
+
+
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-top: -100px;
+		margin-left: 600px;
+		margin-right: 54px;
+		overflow: hidden;
+		background-color: #cecece;
+		font-family: 'fonte', sans-serif;
+		font-size: 15pt;
+		font-weight: bold;
+	}
+
+	ul.topnav li {
+		float: left;
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+	}
+
+	ul.topnav li a {
+		display: inline-block;
+		color: rgba(0, 0, 0, 1);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	ul.topnav li a:hover {
+		background-color: #8888;
+	}
+
+	ul.topnav li.icon {
+		display: none;
+	}
+
+	@media screen and (max-width:280px) {
+		ul.topnav li:not(:first-child) {
+			display: none;
+		}
+
+		ul.topnav li.icon {
+			float: right;
+			display: inline-block;
+		}
+	}
+
+	@media screen and (max-width:180px) {
+		ul.topnav.responsive {
+			position: relative;
+
+		}
+
+		ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		ul.topnav.responsive li {
+			float: none;
+			display: inline;
+		}
+
+		ul.topnav.responsive li a {
+			display: block;
+			text-align: left;
+		}
+	}
+</style>
+
+<body>
+	<div id="interface">
+
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Igreja Evangelica</h1>
+				<h2>Assembleia de Deus Pentecostal da Guarda</h2>
+			</hgroup>
+
+			<!--<nav id="menu">
+				-<h1>Menu Principal</h1>-->
+			<!--<ul type="" >
+				<li ><a href="index.html">Home</a></li>
+				<li class="subnavbtn" class="subnav"><a href="specs.html">Sobre</a></li>
+				<li ><a href="fotos.html">Fotos</a></li>
+				<li ><a href="multimidia.html">Multimídia</a></li>
+				<li ><a href="fale-conosco.html">Contactos</a></li>
+			</ul>
+				
+
+			</nav>-->
+			<ul class="topnav">
+				<li><a href="index.html">Home</a></li>
+				<li class="subnavbtn" class="subnav"><a href="specs.html">Sobre</a></li>
+
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="publicacao.html">Publicações</a></li>
+				<li><a href="fale-conosco.html">Contactos</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:10px;" onclick="myFunction()">☰</a>
+				</li>
+			</ul>
+		</header>
+
+		<section id="corpo">
+			<article id="noticia">
+				<header id="cabeclho-arti">
+					<hgroup>
+						<h1>Seja Bem Vindo</h1>
+						<h3 class="dir">Atualizado em 23/Abril/2020</h3>
+					</hgroup>
+				</header>
+
+				<h2>Apresentação</h2>
+				<p>Seja muito bem vindo ao site da Igreja Evangélica, Assembleia de Deus, na Guarda.</P>
+				<p>A Igreja Evangélica Assembleia de Deus Pentecostal na Guarda faz parte da missão da Assembleia de
+					Deus de Coimbra, e está implantada na cidade da Guarda há cerca de 35 anos.</p>
+				<p>Por sua vez fazem parte do núcleo da Guarda as seguintes Missões: Trancoso, Pinhel, Vermeosa,
+					Figueira de Castelo Rodrigo, Mêda, Vila Nova de Foz Côa e Aguiar da Beira.</p>
+				<figure class="foto-legenda">
+					<img src="_imagens/local.png" />
+					<figcaption>
+						<h1>Venha como está...</h1>
+						<h1>...e deixe Deus mudar a sua vida!</h1>
+
+					</figcaption>
+				</figure>
+
+				<h2>Localização</h2>
+				<p>Assembleia de Deus Pentecostal da Guarda</p>
+				<p>Rua 31 de Janeiro, nº 51</p>
+				<p>6300 Guarda</p>
+
+				<h2>Locais de Culto & Horários</h2>
+				<table id="tabelaspac">
+					<caption>Tabela dos locais <h3 class="dir">Atualizado em 23/Março/2020</h3>
+					</caption>
+
+					<tr>
+						<td class="ce">Guarda</td>
+						<td class="cd">Rua 31 de Janeiro, 51 R/c</td>
+					</tr>
+					<tr>
+						<td rowspan="5" class="ce"></td>
+						<td class="cd">Domingos 9.30 h - Oração</td>
+					</tr>
+					<tr>
+						<td class="cd">10.00 h - Escola Dominical</td>
+					</tr>
+					<tr>
+						<td class="cd">15.00 h - Culto Público</td>
+					</tr>
+					<tr>
+						<td class="cd">20.30 h - Quartas - feiras<br> Estudo Bíblico</td>
+					</tr>
+					<tr>
+						<td class="cd"><span>Pr. José Galvão.</span> - Responsável</td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="ce">Vila Fernando</td>
+						<td class="cd">Casa particular</td>
+					</tr>
+					<tr>
+						<td class="cd">Sábados 17.00 h (inverno 18h)</td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="ce">Panóia</td>
+						<td class="cd">Casa particular</td>
+					</tr>
+					<tr>
+						<td class="cd">Sábados 15.00 h (inverno 20.00 h)</td>
+					</tr>
+
+				</table>
+				<!--<h2>Como funciona</h2>
+<p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+
+
+
+	<!--video id="filme" controls="controls" poster="_imagens/video-mini01.jpg">
+			<source src="_media/one-day.mp4" type="video/mp4"/>
+			<source src="_media/one-day.webn" type="video/webn"/>
+			<source src="_media/one-day.ogv" type="video/ogg"/>
+			Desculpe, náo e possivel carregar o video.
+		</video>-->
+			</article>
+		</section>
+
+		<aside id="lateral">
+			<h1>Outras Notícias</h1>
+			<figure class="foto-legenda">
+				<img src="_imagens/ho_n.png" />
+				<!--<figcaption>
+					<br><br><br><br><br><br><br><br><br>
+					<h4>Juntos Contra o COVD-19...</h4>
+					<h4>...e deixe Deus protejer a sua vida!</h4>
+
+				</figcaption>-->
+			</figure>
+			<h2>A paz de Deus para todos!</h2>
+			<p>Vivemos um momento único e novo na vida da igreja.<br>
+				Um tempo em que não podemos estar juntos fisicamente, mas podemos e devemos estar juntos em
+				espírito.<br>
+				Apesar destas circunstâncias, o senso de corpo, de igreja, tem que estar presente. E por isso a igreja
+				continua... noutros moldes, noutro formato, nas a génese é a mesma.<br>
+				Então, além de nós nos estimularmos, de nos animarmos, precisamos, também de continuar a
+				contribuir...pois a igreja não pára!<br>
+				Acredito que o nosso Deus vai continuar a ser fiel e vai recompensar de uma forma extraordinária.<br>
+				Deus vos abençoe ricamente<br>
+				Abraço forte do vosso Pastor e amigo
+				<span>José Galvão</span>.</p>
+
+			<h2>Vídeo mais recente</h2>
+			<iframe
+				src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fad.guarda%2Fvideos%2F637847960009452%2F&show_text=1&width=560"
+				width="500" height="491" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+				allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+		</aside>
+		<footer id="rodape">
+			<p>Todos os direitos reservados © 2020 Assembleia de Deus Pentecostal da Guarda.<br>
+				<a href="https://www.facebook.com/ad.guarda/" target="_blank">Facebook</a> |
+				<a href="" target="_blank">Instagram</a> |
+				<a href="" target="_blank">Youtube</a></p>
+		</footer>
+	</div>
+</body>
+<script>
+	function myFunction() {
+		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+	}
+</script>
+
+</html>

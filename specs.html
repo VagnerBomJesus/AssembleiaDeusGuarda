@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assembleia de Deus Pentecostal da Guarda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/js" href="">
+	<link rel="shortcut icon" href="">
+	<link rel="icon" href="_imagens/browser.png">
+	<script language="javascript" src="_javascript/funcoes.js"> </script>
+</head>
+<style>
+	@charset: "utf-8";
+	@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Titillium+Web');
+
+	@font-face {
+		font-family: 'fonte';
+		src: url("../_fonts/bubblegum-sans-regular.otf");
+	}
+
+	p {
+		text-align: justify;
+		background-image: ;
+	}
+
+	a {
+		color: #606060;
+		text-indent: nane;
+	}
+
+	.va {
+		color: #606060;
+		background-color: #fffffff;
+	}
+
+	body {
+		background-color: #dddddd;
+		color: rgba(0, 0, 0, 1);
+		font-family: Arial, sans-serif;
+	}
+
+	div#interface {
+		width: 1150px;
+		background-color: white;
+		margin: -30px auto 0px auto;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+		padding: 10px;
+	}
+
+	span {
+		font-weight: 900;
+	}
+
+	h1#man {
+		display: nane;
+		color: transparent black;
+		position: relative;
+	}
+
+	header#cabecalho img#icone {
+		position: absolute;
+		left: 542px;
+		top: 40px;
+		width: 600px;
+		height: 165px;
+	}
+
+	header#cabecalho h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	header#cabecalho h2 {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 15pt;
+		color: #888888;
+		padding: 0px;
+		margin-top: 0px;
+	}
+
+	header#cabecalho {
+		border-bottom: 1px #606060 solid;
+		height: 190px;
+		background: url("_imagens/logo.png") no-repeat 0px 100px;
+	}
+
+	/* Formatação imagem Legenda*/
+	.foto-legenda {
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+		height: 300px;
+		width: 1130px;
+		margin-left: 0px;
+	}
+
+	.foto-legenda img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.foto-legenda figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0, 0, 0, .4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}
+
+	.foto-legenda:hover figcaption {
+		opacity: 1;
+	}
+
+	/*formatação do menu*/
+	nav#menu {
+		display: block;
+	}
+
+	nav#menu ul {
+		list-style: nane;
+		text-transform: uppercase;
+		position: absolute;
+		top: -20px;
+		left: 500px;
+	}
+
+	nav#menu li {
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 1s;
+	}
+
+	nav#menu li:hover {
+		background-color: #606060;
+	}
+
+	#menu h1 {}
+
+	nav#menu a {
+		color: #00000;
+	}
+
+	nav#menu a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	section#corpo {
+		display: block;
+		width: 600px;
+		float: left;
+		border-right: 1px solid #606060;
+		padding: 5px;
+		padding-right: 20px;
+	}
+
+	article#noticia h2 {
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	header#cabeclho-arti h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom: 0px;
+		margin-top: 0px;
+
+	}
+
+	header#cabeclho-arti h2 {
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	h3 {
+		font-size: 12px;
+		color: #606060;
+	}
+
+	.dir {
+		text-align: right;
+	}
+
+	table#tabelaspac {
+		border: 1px solid #606060;
+		border-spacing: 0px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	table#tabelaspac td {
+		border: 1px solid #606060;
+		padding: 10px;
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.ce {
+		color: #fffffff;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+	}
+
+	.cd {
+		background-color: #cecece;
+	}
+
+	table#tabelaspac caption {
+		color: #8888;
+		font-size: 15pt;
+		font-weight: bolder;
+	}
+
+	caption span {
+		display: block;
+		float: right;
+		color: #000000;
+		font-size: 8pt;
+		margin-top: 10px;
+	}
+
+	aside#lateral {
+		display: block;
+		width: 500px;
+		float: right;
+		padding: 10px;
+		background-color: #dddddd;
+		margin-top: 10px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	}
+
+	aside#lateral h1 {
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-top: 0px;
+	}
+
+	aside#lateral h2 {
+		background-color: #606060;
+		font-size: 15pt;
+		color: #ffffff;
+		padding: 10px;
+	}
+
+	footer#rodape {
+		clear: both;
+		border-top: 1px solid #606060;
+		text-align
+	}
+
+	footer#rodape p {
+		text-align: center;
+	}
+
+
+	/* Style the tab */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+	}
+
+	/* Fade in tabs */
+	@-webkit-keyframes fadeEffect {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeEffect {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	#block1 {
+		position: absolute;
+		margin-left: 400px;
+		margin-right: 40px;
+		width: 690px;
+		height: 165px;
+
+		margin-top: -350px;
+		padding-right: 50px;
+		padding-left: 30px;
+	}
+
+
+
+	#block2 {
+		position: absolute;
+		width: 650px;
+		height: 165px;
+		margin-left: 460px;
+
+		margin-top: -300px;
+	}
+
+	#block3 {
+		position: absolute;
+		width: 650px;
+		height: 165px;
+		margin-left: 460px;
+		margin-top: -220px;
+
+	}
+
+	#block4 {
+		position: absolute;
+		width: 650px;
+		height: 165px;
+		margin-left: 460px;
+		margin-top: -650px;
+	}
+
+	#boximag {
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+	}
+
+	#boximag img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.img15 {
+		position: absolute;
+		width: 650px;
+		height: 165px;
+		left: 550px;
+		top: 1010px;
+	}
+
+
+
+
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-top: -100px;
+		margin-left: 600px;
+		margin-right: 54px;
+		overflow: hidden;
+		background-color: #cecece;
+		font-family: 'fonte', sans-serif;
+		font-size: 15pt;
+		font-weight: bold;
+	}
+
+	ul.topnav li {
+		float: left;
+		font-family: 'fonte', sans-serif;
+		font-size: 20pt;
+	}
+
+	ul.topnav li a {
+		display: inline-block;
+		color: rgba(0, 0, 0, 1);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+
+	ul.topnav li a:hover {
+		background-color: #8888;
+	}
+
+	ul.topnav li.icon {
+		display: none;
+	}
+
+	@media screen and (max-width:280px) {
+		ul.topnav li:not(:first-child) {
+			display: none;
+		}
+
+		ul.topnav li.icon {
+			float: right;
+			display: inline-block;
+		}
+	}
+
+	@media screen and (max-width:180px) {
+		ul.topnav.responsive {
+			position: relative;
+
+		}
+
+		ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		ul.topnav.responsive li {
+			float: none;
+			display: inline;
+		}
+
+		ul.topnav.responsive li a {
+			display: block;
+			text-align: left;
+		}
+	}
+
+
+
+	/* Style tab links *
+	.tablink {
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 10px 16px;
+		font-size: 17px;
+		width: 25%;
+		height: 56px;
+	}
+
+	.tablink:hover {
+		background-color: #777;
+	}
+
+	/* Style the tab content (and add height:100% for full page content) *
+	.tabcontent {
+		color: white;
+		display: none;
+		padding: 100px 20px;
+		height: 100%;
+	}
+
+	#Home {
+		background-color: red;
+	}
+
+	#News {
+		background-color: green;
+	}
+
+	#Contact {
+		background-color: blue;
+	}
+
+	#About {
+		background-color: orange;
+	}*/
+</style>
+
+<body>
+	<div id="interface">
+
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Igreja Evangelica</h1>
+				<h2>Assembleia de Deus Pentecostal da Guarda</h2>
+			</hgroup>
+
+			<!--<nav id="menu" >
+			<!--<h1>Menu Principal</h1>-->
+			<!--<ul type="" >
+						<li ><a href="index.html">Home</a></li>
+						<li class="subnavbtn" class="subnav"><a href="specs.html">Sobre</a></li>
+						<li ><a href="fotos.html">Fotos</a></li>
+						<li ><a href="multimidia.html">Multimídia</a></li>
+						<li ><a href="fale-conosco.html">Contactos</a></li>
+					</ul>
+			</nav>-->
+
+			<ul class="topnav">
+				<li><a href="index.html">Home</a></li>
+				<li class="subnavbtn" class="subnav"><a href="specs.html">Sobre</a></li>
+				
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="publicacao.html">Publicações</a></li>
+				<li><a href="fale-conosco.html">Contactos</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:10px;" onclick="myFunction()">☰</a>
+				</li>
+			</ul>
+		</header>
+
+		<section id="corpo2">
+			<article id="noticia">
+
+				<figure class="foto-legenda">
+					<img src="_imagens/15.jpg" />
+				</figure>
+
+				<header id="cabeclho-arti">
+
+					<!--<button class="tablink" onclick="openPage(event, 'Declaração')" id="">Declaração de
+						Fé</button>
+					<button class="tablink" onclick="openPage('News', this, 'green')">História das Assembleias de
+						Deus Portugal</button>
+					<button class="tablink" onclick="openPage('Contact', this, 'blue')">História da Assembleia de
+						Deus Cidade da Guarda</button>
+					<button class="tablink" onclick="openPage('About', this, 'orange')">Missões</button>
+
+					<div id="Home" class="tabcontent">
+						<h3>Home</h3>
+						<p>Home is where the heart is..</p>
+					</div>
+
+					<div id="News" class="tabcontent">
+						<h3>News</h3>
+						<p>Some news this fine day!</p>
+					</div>
+
+					<div id="Contact" class="tabcontent">
+						<h3>Contact</h3>
+						<p>Get in touch, or swing by for a cup of coffee.</p>
+					</div>
+
+					<div id="About" class="tabcontent">
+						<h3>About</h3>
+						<p>Who we are and what we do.</p>
+					</div>-->
+					<!--************/-->
+					<hgroup>
+						<div class="tab">
+							<button class="tablinks" onclick="openCity(event, 'Declaração')" id="defaultOpen">Declaração
+								de Fé</button>
+							<button class="tablinks" onclick="openCity(event, 'historia1')">História das Assembleias de
+								Deus Portugal</button>
+							<button class="tablinks" onclick="openCity(event, 'historia2')">História da Assembleia de
+								Deus Cidade da Guarda</button>
+							<button class="tablinks" onclick="openCity(event, 'misao')">Missões</button>
+						</div>
+
+						<div id="Declaração" class="tabcontent">
+							<h1>Convenção das Assembleias de Deus em Portugal</h1>
+							<p><span>1. Relacionado com a Trindade</span><br>
+								Cremos na existência de um único Deus eterno, pessoal, eternamente existente em três
+								pessoas distintas: Pai, Filho e Espírito Santo.
+								Cremos em Deus Pai, nunca visto por homem algum, que é Espírito, e portanto, desprovido
+								de corpo físico, mas que foi revelado em carne por Seu Filho, nosso Senhor Jesus Cristo.
+								Cremos em todos os Seus atributos divinos conforme estão expressos na Bíblia Sagrada.
+							</p>
+
+							<p>Cremos no Senhor Jesus Cristo, como Filho de Deus, igual ao Pai e ao Espírito em
+								divindade e atributos.
+								Cremos no Seu nascimento virginal, na Sua perfeita humanidade, na Sua vida imaculada,
+								nos Seus milagres, na Sua morte vicária e expiatória, na Sua ressurreição corpórea, na
+								Sua ascensão ao céu, na Sua actual intercessão e mediação.
+								Cremos na Sua segunda vinda em duas fases distintas: a primeira, para arrebatar a
+								Igreja, antes da Grande Tribulação, ressuscitando os crentes fiéis e transformando os
+								crentes vivos, arrebatando-os para o céu.
+
+								</br> A segunda, para estabelecer o Seu Reino Milenal.</p>
+
+
+
+							<p>Cremos no Espírito santo.</br> Cremos na sua personalidade, divindade e actividade, que
+								opera a conversão e regeneração do pecador.
+
+								</br> Igual ao Pai e ao Filho em divindade e atributos.</p>
+
+							<p><span>2. Relacionado com as Sagradas Escrituras</span><br>
+								Cremos na inspiração verbal da Bíblia, infalível e depositária da verdade e revelação
+								divina. Cremos na sua suprema autoridade como única e suficiente regra de fé e prática.
+								Cremos na sua inerrância e perfeição em tudo o que declara. Cremos na Bíblia como um
+								todo harmónico, com os seus grande princípios imutáveis. Sentimo-nos obrigados por tudo
+								o que a Bíblia diz, e não por aquilo que ela omite. Seguimos o que está expressamente
+								revelado, e não o subentendido ou acrescentado ao seu texto. Como ministros da Palavra
+								ensinamos toda a Escritura interpretando-a correctamente de acordo com a hermenêutica
+								bíblica.</p>
+
+
+							<p><span>3. Relacionado com o Homem</span><br>
+								Cremos que o Homem foi criado por Deus à Sua imagem e semelhança para viver em eterna
+								comunhão com Ele. Cremos na queda e na consequente depravação total e universal do ser
+								humano, que o destitui da glória de Deus, e que apenas o arrependimento e a fé na obra
+								redentora de Cristo o poderá restaurar a Deus. Cremos na necessidade do <a
+									href="http://www.cadp.pt/quem-somos/declaracao-de-fe#">
+									<font color="#0066cc">novo</font>
+								</a> nascimento, e regeneração pela fé em Cristo, pela operação do Espírito Santo e da
+								Palavra de Deus. Cremos no perdão dos pecados através de Jesus e Sua expiação; cremos na
+								Salvação eterna e perfeita como uma dádiva da graça divina, na justificação pela fé no
+								sacrifício de Jesus Cristo feito no Calvário. Cremos na santificação instantânea, e na
+								necessidade e possibilidade da santificação progressiva dos crentes, tanto no interior
+								como no exterior, ou seja, no espírito, alma e corpo, e que essa santidade se pauta:</p>
+
+							<p> a) por uma separação do mundo e do que no mundo há;</p>
+
+							<p> b) por uma vida simples, isenta de vaidades e extravagâncias;</p>
+
+							<p> c) por uma semelhança cada vez maior com Cristo e Seus padrões imaculados, o que
+								equivale a uma diferença e distância cada vez maior do mundanismo;</p>
+
+							<p> d) pela diferença clara e bíblica entre os sexos.</p>
+
+							<p><span>4. Relacionado com o Baptismo nas Águas</span><br>
+								Cremos no Baptismo nas Águas efectuado por imersão em nome do Pai, do Filho e do
+								Espírito Santo. Este Baptismo só deve ser ministrado a pessoas realmente convertidas,
+								nascidas de novo, que evidenciem de forma inequívoca os frutos da nova vida em Cristo.
+								Cremos que o Baptismo nas Águas é a porta de entrada para a membrasia da igreja local e
+								para a participação na Ceia do Senhor. Não ministramos o Baptismo a pessoas em situação
+								irregular no matrimónio, ou com situações pendentes ou duvidosas que contrariem os
+								princípios bíblicos. </p>
+
+							<p><span>5. Relacionado com a Ceia do Senhor</span><br>
+								Cremos na Ceia do Senhor como um memorial da morte, ressurreição e segunda vinda de
+								Cristo, a qual deve ser ministrada só aos crentes biblicamente baptizados e fiéis.</p>
+
+							<p><span>6. Relacionado com o Espírito Santo</span><br>
+								remos no importante trabalho do Espírito Santo, na preparação da Igreja e dos crentes
+								individualmente, guiando, fortalecendo, enviando, etc. Cremos no Baptismo no Espírito
+								Santo, com a evidência inicial de falar em outras línguas e na prática contínua de falar
+								línguas como forma de edificação pessoal. Cremos na actualidade e necessidade dos dons
+								espirituais distribuídos pelo Espírito Santo à Sua Igreja para o que for útil.
+							</p>
+
+							<p><span>7. Relacionado com a Cura Divina</span><br>
+								Cremos na actualidade da Cura Divina como resultado da obra de Cristo no Calvário,
+								dependente da soberania de Deus. Cremos que nem todas as doenças são procedência de
+								espíritos malignos ou consequência de pecados específicos, embora uma coisa e outra
+								possam também acontecer. Cremos que podemos receber a Cura Divina, em nome de Jesus,
+								como resultado da oração da fé e também através da operação dos dons espirituais,
+								conforme ensina a Bíblia.</p>
+							<p><span>8. Relacionado com a Ressurreição</span><br>
+								Cremos na ressurreição dos mortos, tanto dos salvos como dos perdidos, que ocorrerá em
+								duas ocasiões distintas.</p>
+
+							<p><span>9. Relacionado com o Juízo Final e o Estado Eterno</span><br>
+								Cremos no juízo vindouro e na vida eterna de gozo e bem-aventurança dos santos, e na
+								morte eterna como castigo de todos os perdidos. Cremos nos Novos Céus e na Nova Terra
+								como lugar de eterna habitação dos justos.</p>
+
+							<p><span>10. Relacionado com a Igreja</span><br>
+								Cremos que a Igreja de Cristo é constituída por todas as pessoas remidas e nascidas de
+								novo, vivendo em santidade de vida e separados do mundo. Cremos que o governo da igreja
+								local deve ser teocrático no que se refere à doutrina e direcção espiritual, e
+								consensual no que se refere à administração, finanças, nomeação e reconhecimento dos
+								seus oficiais. Os crentes deverão ser consultados e informados periodicamente da
+								administração e uso do dinheiro.
+							</p>
+
+
+							<p><span>11. Relacionado com os Anjos e Demónios</span><br>
+								Cremos na existência de anjos bons que servem a Deus e aos herdeiros da salvação, e de
+								anjos maus: Satanás e os demónios. Cremos que os remidos por Cristo não podem ser
+								possuídos por demónios no seu todo ou em áreas específicas, salvo se deixarem o Senhor e
+								voltarem ao pecado.
+							</p>
+							<p><span>12. Relacionado com a Salvação</span><br>
+								Cremos que a Salvação é fruto da graça de Deus; é uma obra perfeita e completa do Senhor
+								Jesus Cristo, que envolve o homem total (espírito, alma e corpo), aceite mediante a fé.
+								Cremos que a Salvação é recebida no momento da conversão, mas que pode perder-se se o
+								crente não permanecer fiel a Deus e à Sua Palavra.
+							</p>
+							<p><span>13. Relacionado com o Culto</span><br>
+								Cremos que o culto pentecostal deve ser caracterizado pelo louvor, adoração, oração,
+								fervor, fé, pregação da Palavra e operação do Espírito Santo com a manifestação dos dons
+								espirituais, através da participação individual dos crentes, pautada pela ordem e
+								decência. Cremos que não devem ocorrer no culto pentecostal práticas antibíblicas, mas
+								antes o equilíbrio entre a adoração, louvor, oração e pregação da Palavra de Deus.
+							</p>
+							<p><span>14. Omissões à presente declaração</span><br>
+								Esta declaração tem apoio nos textos expressos na Bíblia Sagrada, e tudo o que foi
+								omisso remetemos para os princípios e preceitos claramente expressos na Escritura.
+							</p>
+
+
+						</div>
+
+						<div id="historia1" class="tabcontent">
+							<h1>História das Assembleias de Deus em Portugal</h1>
+							<p><img alt="História"
+									src="https://cadp.pt/wp-content/uploads/2018/10/Foto-inicial-405x300.jpg"
+									width="405" height="300" /></p>
+							<div id="block1">
+								<p>O Movimento das Assembleias de Deus iniciou-se no ano de <span>1913</span> com a
+									chegada a Portugal do missionário José Plácido da Costa, cidadão <a
+										href="https://cadp.pt/historia/#">
+										<font color="#0066cc">português</font>
+									</a> emigrado no Brasil, país onde aceitou a mensagem pentecostal após contacto com
+									os primeiros missionários pentecostais aí chegados, os cidadãos suecos Daniel Berg e
+									Gunar Vingren, com os quais passou a trabalhar de forma intensa na divulgação do
+									Evangelho.
+								</p>
+								<p>
+									Entretanto, <span>José Plácido da Costa</span> decidiu deslocar-se a Portugal, tendo
+									desenvolvido a sua actividade missionária primeiro em <span>Valezim-Seia</span> onde
+									baptizou a crente <span>Maria dos Prazeres Mendes Corveira</span> e mais tarde na
+									cidade do <span>Porto</span> junto com a Igreja Baptista . Em 1927 vai para a
+									Argentina depois Brasil e regressa novamente a Portugal em 1932 ou 33, para ajudar o
+									missionário sueco <span>Daniel Berg</span> que tinha chegado ao Porto em
+									<span>1932</span> para estabelecer a Assembleia de Deus. ( De acordo com alguns
+									fontes haveria pentecostais no Porto desde 1925).
+								</p>
+								<p>
+									Mais tarde, esse pastor iniciou outras igrejas fora do Algarve, como as de
+									<span>Santarém</span>, <span>Alcanhões</span> e <span>Rio Maior</span>.
+								</p>
+							</div>
+							<p>
+								Decorria o ano de <span>1921</span> quando o trabalho evangélico de matriz pentecostal
+								começou a tornar-se visível e a estabelecer-se sólida e definitivamente em Portugal por
+								acção do missionário José de Matos Caravela, também ele cidadão português emigrado no
+								Brasil e que regressou ao seu pais de origem, precisamente nesse ano de
+								<span>1921</span>.
+							</p>
+							<p>
+								O trabalho missionário de José de Matos iniciou-se na <span>Beira Alta</span> e
+								<span>Beira Litoral</span>, com alguns resultados, chegando a fundar uma Assembleia em
+								<span>Tondela</span> que daria mais tarde origem ao trabalho em <span> Carvalhal Redondo
+									- Nelas</span>. Depois, em finais de <span>1923</span>, deslocou-se para o Algarve
+								onde fundou várias igrejas das Assembleias de Deus, designadamente em
+								<span>Portimão</span> em <span>1924</span>, depois <span>Lagos</span> e
+								<span>Silves</span>.
+							</p>
+							<p><span>O Desenvolvimento</span><br><br>
+								A partir desse ano, estabeleceram-se igrejas Assembleia de Deus em várias cidades de
+								Portugal com a ajuda de missionários suecos e com o trabalho esforçado de pastores
+								portugueses, que entretanto tinham sido preparados pelos pioneiros, os quais entregaram
+								as suas vidas à causa da obra de Deus e contribuíram decisivamente para o seu
+								crescimento.
+							</p>
+							<p>
+								Em resultado do envolvimento desses homens e mulheres, portadores da mensagem
+								Pentecostal, foi fundada a <span>Assembleia de Deus de Évora, em 1932</span>, através da
+								acção da evangelista <span>Isabel Guerreiro</span> e a Assembleia de Deus de
+								<span>Lisboa</span>, em <span>1934</span>, com a ajuda do missionário <span>Jack
+									Hardstedt</span> seguindo-se <span>Samuel Nystrom</span>, <span>Tage
+									Stahlberg</span> e <span>Alfredo Machado</span>, <span>João S. Hipólito</span>,
+								etc.. Além dessas igrejas, em muitos outros pontos de Portugal - em diferentes distritos
+								e cidades, de norte a sul do país - foram surgindo Igrejas Pentecostais Assembleia de
+								Deus.
+							</p>
+							<p>
+								Além dos referidos missionários e iniciadores da obra de Deus em Portugal no início do
+								século XX, foram pioneiros distintos Ministros do Evangelho, entre outros, cujo relevo é
+								inteiramente merecido, os seguintes: Holger Backstrom, Isabel Guerra, Manuel Ribeiro
+								Fernandes, Beatriz da Ribeira, Lurdes Campos, Rogério Ramos Pereira, Horácio Gomes de
+								Sousa, José Lopes Quedas, Durval Correia, Artur Rodrigues, Conde, Jaime Figueiredo,
+								Augusto Henriques, Dr. Colin Bowker, Dra Margaret Bowker, José de Oliveira Pessoa, João
+								Chasqueira, Virgílio Condeço, Manuel Cartaxo, Joaquim Cartaxo, Israel Coias Pires,
+								Miguel Coias, José Augusto Pina, Joaquim Cerro Guerreiro, José Neves Ramos, António Dias
+								Gonçalves, etc.
+							</p>
+							<p><span>Trabalho Missionário</span><br>
+								No desenvolvimento da sua acção missionária o Movimento deu especial atenção ao trabalho
+								nos territórios ultramarinos (Angola, Guiné, S. Tomé e Principe, Moçambique, Timor, por
+								exemplo), nos quais, após se tornarem países independentes, se mantiveram e floresceram
+								igrejas Assembleia de Deus com as quais mantém fortes relações de fraternidade cristã,
+								que se traduzem em apoios distintos: preparação de obreiros, apoio a missionários nos
+								respectivos países, visitas de ensino, envio de géneros alimentícios, vestuário,
+								medicamentos e outros.
+							</p>
+							<p>
+								Da mesma maneira, também entre os emigrantes portugueses espalhados pelo Mundo. A título
+								meramente exemplificativo, registam-se as deslocações de vários pastores-missionários,
+								comprometidos com o Movimento das Assembleias de Deus em Portugal, os quais levaram a
+								mensagem pentecostal a várias partes do nosso país e do mundo.
+							</p>
+							<p>
+								Entre <span>1941 e 1947, José Lopes Quedas</span> foi missionário na Ilha de <span>São
+									Miguel</span>, nos Açores; no ano de <span>1947</span>, foram para <span> Moçambique
+									José Augusto Pina e Joaquim Cerro Guerreiro</span>; para <span>Angola</span>, foi
+								<span>Joaquim Cartaxo Martins</span>, em <span>1949</span>, onde deu início ao trabalho
+								das Assembleias de Deus; para a <span>Guiné</span>, foi como missionário, em 1952,
+								<span>José Oliveira Pessoa</span> e, neste mesmo ano, <span>Joaquim do Cerro</span>
+								iniciou o trabalho entre os portugueses residentes na <span>África do Sul</span>; no ano
+								seguinte, foi a vez de <span>João Chasqueira</span> e família trabalhar nos
+								<span>Açores, Ilha Terceira</span>, como missionário; em <span>1959</span>, chegaram à
+								Ilha do Pico, nos Açores, <span>Miguel Coias</span> e família, os quais, em
+								<span>1969</span>, deslocaram-se a Timor como missionários das Assembleias de Deus; o
+								trabalho pentecostal iniciou-se na Ilha do Faial, Açores, através do missionário
+								<span>Albino Duarte de Sousa</span> e família, em <span>1964</span>; no ano seguinte,
+								chegou a <span>São Tomé Manuel Gonçalves Costa</span> e família, como missionário das
+								Assembleias de Deus e, em <span>1966, Artur da Silva Rodrigues</span> lançou as bases do
+								trabalho em França, que depois se estendeu a outros países da Europa. Decorria a década
+								de setenta quando chegou a <span>São Tomé e Príncipe Manuel Joaquim Fernandes</span> e
+								família, exactamente em <span>1970</span>; em <span>1972</span>, iniciou-se o trabalho
+								das Assembleias de Deus na <span>Ilha da Madeira</span> por meio da acção de <span>Dinis
+									Pereira e sua mulher Lurdes</span>; em <span>1974</span>, chegou a <span>Timor
+									Virgílio Condeço</span> e família e a <span>São Tomé e Príncipe Delfim
+									Cordeiro</span> e família. Também em finais da década de sessenta (1969),
+								<span>Israel Pires</span>, em <span>Luanda</span>, dá continuidade ao trabalho
+								pentecostal, retomando a denominação Assembleia de Deus, após o qual chegaram outros
+								missionários como Manuel Gonçalves Costa, Joaquim Castilho, João Chasqueira, Eusébio
+								Tomás e outros. Na década de oitenta (1981), chegou a Macau Juvenal Clemente, onde, mais
+								tarde (1987), iniciou o trabalho do Desafio Jovem; também em 1981, Paulo Branco partiu
+								para Espanha, onde permaneceu até 1994. Em 1992 Abel Tomé e família para Macau e em 1999
+								para Moçambique. Em 1999 Josefa Rodrigues para a Guiné Bissau.
+							</p>
+							<p>
+								Em Janeiro de 1994 foi criado o Departamento Nacional de Missões (DNM). O mesmo têm por
+								objectivo coordenar o trabalho dos missionários estrangeiros radicados em Portugal ou
+								que pretendam integrar-se nas igrejas portuguesas entre os imigrantes, mobilizar
+								virtuais missionários, aglutinar vontades e recursos financeiros. Além disso, o DNM tem
+								por alvo manter relações especiais com os departamentos estrangeiros congéneres para
+								partilhar informações de utilidade comum e, eventualmente, realizará acções missionárias
+								em conjunto.
+							</p>
+							<p><span>O Trabalho Social</span><br>
+								Dentro do Movimento foram criados orfanatos, lares da terceira idade, cafés convívio
+								para atendimento aos toxicodependentes e seus familiares, associações várias que visam a
+								acção social em concreto quer em relação aos membros das Igrejas quer aos cidadãos em
+								geral. Em particular no que concerne à toxicodependência, não tendo Portugal escapado a
+								essa praga do século vinte, a Convenção das Assembleias de Deus em Portugal convidou, no
+								Verão de 1977, o Rev. Howard Foltz, que desempenhava, à época, as funções de director do
+								Desafio Jovem (Teen Challenge) para a Europa, para fazer uma explanação do trabalho que
+								tivera a sua origem na acção do Reverendo David Wilkerson, nos Estados Unidos da
+								América, em 1959. Diante da necessidade de dar apoio nessa área, as Assembleias de Deus
+								decidiram deitar mão à obra, adquiriram uma propriedade em Fanhões, Loures, e
+								constituíram uma equipa (Comissão Executiva) para liderar o trabalho constituída pelo
+								Pastor José Oliveira Pessoa, presidente, Pastor José António Lourenço. Vice-presidente,
+								Pastor António Costa Barata, secretário, Pastor Domingos Barradas, tesoureiro e
+								designaram Director Nacional o Evangelista Lucas da Silva. Em 1981 foram concluídas as
+								obras da primeira fase do Centro de Recuperação, que começou a funcionar. Abriu-se
+								também um centro "Café Convívio" na Rua Marques da Silva, em Lisboa para atendimento. A
+								Instituição Desafio Jovem, assim criada em Portugal, deixou, entretanto, de ser um
+								Departamento da Convenção das Assembleias de Deus em Portugal para se tornar autónoma.
+								Hoje mantém acordos de cooperação com as igrejas que o desejam.
+
+							</p><span>ORFANATO - LAR DE BETANIA</span><br>
+							<p>O Lar de Betânia nasceu a 18 de Abril de 1965, no Monte do Pintainho, aquando de uma
+								grande
+								tribulação na família do Pastor de então Sr. Mário Cóias o qual pastoreava a igreja da
+								Assembleia de Deus em Estremoz. A esposa do pastor Mário estava gravemente enferma e, no
+								dizer do Médico assistente, não haveria muitas esperanças de cura. Debaixo dessa
+								dificuldade
+								apenas uma solução poderia ser encontrada, isto é, suplicar a intervenção de Deus. Na
+								oração
+								do pastor ele disse "Senhor não me deixes ver os meus filhos órfãos de mãe, à semelhança
+								de
+								tantos outros, e se Tu curares a minha mulher eu irei criar um Orfanato para acolher
+								crianças necessitadas". Então o Médico dos médicos ouviu, a súplica, e deu a Sua
+								resposta
+								com o Milagre desejado. Obviamente, nessa ocasião, só havia uma coisa a fazer, ou seja,
+								cumprir a promessa. Assim o trabalho teve início na sua própria casa, no citado Monte do
+								Pintainho. Mais tarde em 1970, com cinco anos de experiência, o Lar de Betânia passa a
+								sua
+								actividade para Quinta das Sequeiras, cuja propriedade foi ofertada por um cristão
+								inglês.
+								Desde então estão nesse local, e foram necessárias diversas obras, de remodelação e
+								ampliação, a fim de poder dar-se continuidade ao trabalho e de uma forma mais exequível.
+								Em
+								1985 este Lar alargou a sua esfera de acção, com a abertura de uma Filial em Vendas
+								Novas,
+								sita no Bairro Marconi, destinada a acolher unicamente meninas adolescente.
+								Posteriormente
+								em 1993, transferiu-se para o Bairro 20 de Maio com construção de instalações, iniciadas
+								três anos antes, e hoje em dia acolhe também as raparigas de tenra idade.</p>
+							<p>
+								Agora são uma Instituição Particular de Solidariedade Social (I.P.S.S.) e continuam a
+								receber crianças de ambos os sexos vindas, de diversos lugares.
+							</p>
+							<p>
+								Actualmente a lotação dos utentes já ultrapassou a centena. A manutenção é assegurada
+								com o auxílio das Igrejas Associadas, de Particulares e de um Acordo com a Segurança
+								Social.
+							</p>
+							<p>
+								Recentemente foram ampliadas as Instalações da Filial, em Vendas Novas, foi construído
+								nas instalações de Estremoz um Pavilhão para os tempos lúdicos dos meninos e
+								adolescentes.
+							</p>
+							<p><span>O Ensino Bíblico nas Assembleias de Deus</span><br>
+								A primeira Escola Bíblica do Movimento Pentecostal teve lugar na cidade de Lisboa, em
+								1942. Para a frequentar, de vários pontos do país vieram jovens, professores das Escolas
+								Dominicais, evangelistas e Obreiros consagrados à Obra de Deus. Essa Escola Bíblica foi
+								dirigida pelo missionário sueco Tage Stählberg.
+								Ainda no campo do ensino bíblico, no dia 13 de Janeiro de 1966 foi criado o Instituto
+								Bíblico Nacional, que visava a preparação de obreiros para servirem as igrejas e
+								atenderem às necessidades da evangelização. Decorridos vários anos, mais exactamente em
+								1972, a Convenção das Assembleias de Deus em Portugal convidou o pastor Samuel Johnson,
+								obreiro das Assembleias de Deus dos Estados Unidos da América, para constituir e dirigir
+								um novo Instituto Bíblico, o qual passou a funcionar nas suas novas instalações em
+								Fanhões, concelho de Loures, nos arredores da cidade de Lisboa, tendo a respectiva
+								inauguração ocorrido em Outubro de 1975.
+							</p>
+							<p>
+								Em Janeiro de 1989, foi criada a Escola Bíblica Nacional, a qual se denominou, Instituto
+								Bíblico da Convenção das Assembleias de Deus em Portugal, com o mesmo objectivo fixado
+								em 1966 - preparar obreiros para responderem às necessidades da Obra de Deus quanto à
+								evangelização e ao ensino da Palavra de Deus.
+							</p>
+							<p>
+								Em 2007 fundia-se o IBAD e o IBMonte Esperança para dar origem ao MEIBAD situado em
+								Fanhões-Loures que é actualmente uma escola de formação de homens e mulheres que desejam
+								servir a Deus.
+							</p>
+							<p><span>A História das publicações das Assembleias de Deus</span><br>
+								A página impressa foi utilizada desde sempre pelo Movimento, promovendo a evangelização,
+								divulgando o ensino e estabelecendo o relacionamento de unidade entre as igrejas e os
+								pastores. Além de Revistas, foram publicados livros de autores portugueses e
+								estrangeiros, hinários, calendários, folhetos vários, etc.
+							</p>
+							<p>
+								Logo em 1940 foi editada a revista Estrela do Natal, com a tiragem de 800 exemplares; no
+								ano seguinte, foi editada a revista "Salvé Natal", com a tiragem de 1200 exemplares.
+							</p>
+							<p>
+								Em Outubro de 1942 foi editada a Revista Novas de Alegria, como órgão oficial do
+								Movimento das Assembleias de Deus em Portugal, cujo primeiro Director foi o missionário
+								Tage Stählberg e que se publicou, mensal e ininterruptamente, até ao presente (63 Anos
+								de existência). Publicaram ainda: o Expositor Dominical, cujo primeiro número é de 1965,
+								a Boa Semente, destinada às crianças, divulgada pela primeira vez em 1948 e que ainda se
+								publica na actualidade, com uma parte destinada às crianças e outra aos adolescentes, e,
+								por fim, o Caminho, revista destinada aos jovens e que foi publicada de 1965 a 1979.
+							</p>
+							<p>
+								A Casa Publicadora nasceu no ano de 1943, naturalmente de uma forma muito simples, como
+								quase tudo que nasce. Na sua ascensão passou por algumas vicissitudes até estacionar na
+								sua actual sede, em Lisboa (Portugal), na Av. Almirante Gago Coutinho, nº
+								158.Presentemente mantêm duas publicações mensais: a revista Novas de Alegria – fundada
+								em 1943 – com 36 páginas e magnífica apresentação gráfica, e uma tiragem mensal de 10
+								000 exemplares; a revista infantil Boa Semente com uma tiragem de 4 200
+								exemplares.Anualmente editam o calendário "Maná do Céu" com 6 500 exemplares. É muito
+								apreciado, pois inclui uma folha destacável com um texto bíblico para cada dia do ano.
+								Também utilizam o hinário Cânticos de Alegria – uma colecção de 526 hinos. São
+								representantes exclusivos de algumas Editoras Brasileiras, pelo que distribuem livros do
+								País "irmão" provenientes de cerca de sete Editoras no total.
+							</p>
+							<p><span>Paulo Branco</span><br><br><br>
+								<span>
+									Director Geral do MEIBAD-Monte Esperança Instituto Bíblico da Convenção das
+									Assembleias de Deus em Portugal, Pastor na AD de Almada; Docente e investigador na
+									Universidade Lusófona de Humanidades e Tecnologias- Lisboa.
+								</span>
+							</p>
+
+						</div>
+
+						<div id="historia2" class="tabcontent">
+							<h1>História da Assembleia de Deus na Cidade da Guarda</h1>
+							<p>
+								No prefácio do 1º Livro de Actas da Assembleia de Deus, desta cidade, ficou registado o
+								seguinte:
+							</p>
+							<p>
+								“O povo da Guarda também está no calendário de Deus, segundo a promessa do Salvador em
+								Mateus 24:14 (E este evangelho do Reino será pregado em todo o mundo, em testemunho a
+								todas as gentes, e então virá o fim).
+							</p>
+							<p>
+								Foi em 14 de Setembro de 1975 que o Senhor concedeu a bênção de uma Casa de Oração para
+								a cidade da Guarda, após 10 meses de trabalho intensivo. Glória a Deus!
+							</p>
+							<p>
+								Foi o sinal de que o Senhor está na Sua Obra, vela por ela e a faz prosperar. Aleluia!”
+								O texto é da autoria do Evangelista António Martins, que com a esposa, foi chamado às
+								terras altas a testificar e a evangelizar na granítica cidade da Guarda, sustentado pelo
+								Fundo de Missões das Beiras, na época, com o apoio da Igreja da Covilhã, sob a liderança
+								do Pastor Constantino Ferreira. Refira-se o nome do Irmão Francisco Martins Saraiva, na
+								génese da obra de Deus nesta região e, em particular, na cidade da Guarda.
+							</p>
+							<p>
+								O trabalho prosseguiu com o Pastor António Contente, o primeiro Pastor nesta Assembleia.
+								Neste contexto, tomamos a liberdade de dar a conhecer o teor da carta que teve a
+								gentileza de nos enviar, aquando da Comemoração do 30ºAniversário desta Igreja:
+							</p>
+							<p>
+								“Foi no dia 5 de Setembro de 1977 que eu, minha esposa e filhos, Rute, Lídia e Semião,
+								chegámos à cidade da Guarda, para aí servirmos Jesus durante cinco anos. Fomos assim
+								substituir o Evangelista António Martins, que com sua esposa e filho, tinham ido para
+								França.
+							</p>
+							<p>
+								A Guarda, um Campo de Missão de Coimbra, que muitas Missões tinha e tem, nas Beiras.
+								Coimbra, essa grande Igreja Missionária!
+							</p>
+							<p>
+								Portanto, era necessário dar continuidade à nobre Tarefa de Evangelização e à
+								estabilidade de trabalho. Outros homens e mulheres de Deus já tinham lançado a Semente,
+								nesses terrenos árduos. Assim também nós, com os Irmãos e jovens movidos pelo Espírito
+								Santo, fomos pelos bairros, vilas, cidades e aldeias, de porta em porta, levar o
+								Evangelho e a Salvação em Cristo, como dádiva de Deus a essas pessoas que apenas tinham
+								religião, mas não tinham Cristo.
+							</p>
+							<p>
+								Fomos perseguidos e ameaçados de morte, mas Jesus nos guardou, porque Ele, o Dono da
+								Obra, nos mandou ir, não fomos por conta própria. Ele disse:”Ide e pregai o Evangelho a
+								toda a criatura”.
+							</p>
+							<p>
+								Ainda existem na Igreja da Guarda, muitos Irmãos que recordam estes acontecimentos: nos
+								mercados, vendíamos Bíblias e evangelizávamos, estabelecendo contactos.
+							</p>
+							<p>
+								Na cidade, na Rádio Altitude, às quartas- feiras e Domingos, ia para o ar o programa que
+								levava a mensagem de Esperança a casa dos rádio-ouvintes.Graças a Deus, foi um tempo de
+								grande alegria e bênção!
+							</p>
+							<p>
+								Lembro, que a visão da Evangelização e a paixão pelos perdidos deve existir no coração
+								da Igreja, para que ninguém diga: “a mim, ninguém me falou de Cristo.”
+							</p>
+							<p>
+								Íamos também, todos os meses, pessoalmente, levar o Novas de Alegria às autoridades
+								locais: Governo Civil, Comando da GNR, Comando da PSP, Serviços Prisionais, Presidente
+								da Câmara e Tribunal da Comarca.
+							</p>
+							<img alt="Casa de Oração-Guarda-Gare" src="_imagens/casa de oração Guarda gare.png"
+								width="450" height="200" /><br><br><br>
+							<div id="block2">
+								<br><br>
+								<p>
+									Realizávamos cultos na Guarda- Gare, Celorico da Beira, Ervas Tenras, Manigoto,
+									Panóias, Martim Pega. Algumas pessoas aceitaram Cristo como seu Salvador Pessoal e
+									foram baptizadas, tornando – se Membros da Igreja.
+								</p>
+								<p>
+									Na Bíblia está escrito que uns plantam, outros regam, mas é Deus que dá o
+									crescimento. Que Deus seja louvado e glorificado pelo Sacrifício de Jesus na Cruz e
+									pelo trabalho dos seus servos.
+								</p>
+								<p>
+									Às Igrejas de Coimbra, Covilhã e Guarda, uma palavra de agradecimento pelo amor e
+									pela forma como nos ajudaram.
+								</p>
+
+								<p>
+									Também à Rádio Altitude e Autoridades da cidade que nos recebiam com simpatia, quero
+									aqui deixar uma palavra de apreço e gratidão e, que Deus vos abençoe!”Amém.
+								</p>
+							</div>
+							<img alt="Casa de Oração-Guarda-Gare"
+								src="_imagens/casa de oração bairro da luz na Guarda.jpg" width="450" height="200" />
+							<div id="block3">
+								<p>
+									Ao longo destes 35 anos de existência, a Igreja conheceu três lugares de culto: de
+									início, na Guarda- Gare; a partir de Agosto de 1997, no Bairro da Luz, sob direcção
+									do Pastor Eusébio Tomás, e, presentemente, no centro histórico da cidade, templo
+									inaugurado sob o ministério do Pastor Joás da Cruz de Sousa, em Janeiro de 2005, ano
+									comemorativo do 30ºAniversário.
+								</p>
+							</div>
+							<br><br>
+							<p><span>Cerimónia de Inauguração - Casa de Oração<br>
+									Janeiro 2005
+								</span></p>
+							<img alt="Casa de Oração-Guarda-Gare"
+								src="_imagens/Inauguracão casa de oração rua 31 de janeiro na Guarda.jpg" width="450"
+								height="200" /><br><br>
+							<br>
+							<img alt="Casa de Oração-Guarda-Gare" src="_imagens/janeiro 2005.jpg" width="450"
+								height="200" />
+							<div id="block4">
+								<p>
+									Após o regresso ao Brasil, Assembleia de Deus do Aribiri, deste Servo do Senhor e
+									respectiva família, assumiu a liderança o Pastor José Manuel David Santos, em
+									Setembro de 2006.
+								</p>
+								<p>
+									A tomada de posse teve lugar na presença dos membros da Igreja, do Pastor António
+									Ramalho, Coordenador das Missões e do Presbítero Irmão Abílio, como representante do
+									Ministério da Assembleia de Deus, em Coimbra.
+								</p>
+								<br><br>
+								<p>
+									O Pastor David Santos cumpre a visão evangelística que caracteriza a Igreja, desde a
+									sua fundação, exercendo o ministério que recebeu do Espírito Santo. Não podemos
+									deixar de referir os restantes Servos do Senhor que, com afinco, labutaram pela
+									causa do Mestre, neste lugar: Pastor Mário Palmeiro, Pastor Fernando Caldeira,
+									Pastor Ernesto Gonçalves, Pastor Carlos Alberto Silva e Pastor Jones de Paula.
+								</p>
+								<p>
+									Queremos dirigir um agradecimento às esposas dos obreiros mencionados, nesta breve
+									resenha, que embora não tendo sido citadas, sabemos que pela sua dedicação, amor a
+									Deus e ao próximo têm os seus nomes escritos no Livro da Vida! Ainda, ao Ministério
+									da Igreja, nas pessoas do Presbítero Irmão António Santos e Diácono, Irmão Américo
+									Leal. Aos cooperadores, nas diferentes áreas, nomeadamente, Escola Dominical,
+									Livraria, Serviços Administrativos, Portaria, Louvor e Adoração, Tecnologias de
+									Informação e Comunicação, Limpeza e Manutenção e Acção Social da Igreja.
+								</p>
+								<p>
+									Manifestamos a nossa gratidão às Igrejas em Pinhel, Mêda e Trancoso, pela
+									colaboração em momentos marcantes desta Assembleia, e aos Irmãos que disponibilizam
+									as suas casas, respectivamente, em Panoias, Celorico da Beira e Vila Fernando,
+									permitindo a divulgação e o ensino da Palavra do Senhor.
+								</p>
+								<p>
+									Por último, o nosso profundo reconhecimento à Assembleia de Deus em Coimbra, ao
+									Ministério, em representação da Igreja e ao Pastor João Pedro de Carvalho e esposa,
+									pela cooperação manifestada e abnegação na causa comum do Evangelho.
+								</p>
+								<p>
+									Este texto foi redigido no 35º Aniversário da Assembleia de Deus da Guarda em
+									Setembro de 2010
+								</p>
+							</div><br><br>
+							<br><br><br><br><br>
+						</div>
+
+						<div id="misao" class="tabcontent">
+							<span>Fazem parte do núcleo da Guarda as seguintes missões:</span>
+							<h2>Trancoso</h2>
+							<p>
+								<span>Morada:</span> Bairro Senhor dos Aflitos <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Av. Fernando Pessoa, 55 cave <br><br>
+								<span>Horários:</span> Domingos 10.00h<br><br>
+								<span>Responsável:</span> Missionária Lúcia Baptista<br><br>
+								<span>Site: </span><a href="https://adtrancoso.webnode.pt/" target="_blank">
+									https://adtrancoso.webnode.pt/</a>
+							</p>
+							<h2>Pinhel</h2>
+							<p>
+								<span>Morada:</span> Rua Cabo Verde <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6400-386 Pinhel <br> <br>
+								<span>Horários:</span> Domingos 11h, 16h <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quartas 20.30h
+								<br><br>
+								<span>Responsável:</span> Missionária Lúcia Baptista<br><br>
+								
+							</p>
+							<h2>Figueira de Castelo Rodrigo</h2>
+							<p>
+								<span>Morada:</span> Rua Dr. Miguel Crespo,17 <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								 <br>
+								<span>Horários:</span> Sábados 15h<br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quintas 15h
+								<br><br>
+								<span>Responsável:</span> Missionária Lúcia Baptista<br><br>
+								
+							</p>
+
+							<h2>Vermeosa</h2>
+							<p>
+								<span>Morada:</span> Casa Particular <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								<br>
+								<span>Horários:</span> Sábados 18h<br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segundas 18h
+								<br>
+								<span>Responsável:</span> Missionária Lúcia Baptista<br><br>
+								
+							</p>
+
+							<h2>Mêda</h2>
+							<p>
+								<span>Morada:</span> Rua do Eirol, nº 17 <br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								<br>
+								<span>Horários:</span> Domingos 18h<br>
+								&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+								<br>
+								<span>Responsável:</span> Missionários Carlos Martins e Paula Martins<br><br>
+								
+							</p>
+						</div>
+
+
+
+
+						<div id="Tokyo" class="tabcontent">
+							<h3>Tokyo</h3>
+							<p>Tokyo is the capital of Japan.</p>
+						</div>
+						<div id="Tokyo" class="tabcontent">
+							<h3>Tokyo</h3>
+							<p>Tokyo is the capital of Japan.</p>
+						</div>
+					</hgroup>
+				</header>
+
+				<footer id="rodape">
+					<p>Todos os direitos reservados © 2020 Assembleia de Deus Pentecostal da Guarda.<br>
+						<a href="https://www.facebook.com/ad.guarda/" target="_blank">Facebook</a> |
+						<a href="" target="_blank">Instagram</a> |
+						<a href="" target="_blank">Youtube</a></p>
+				</footer>
+	</div>
+
+</body>
+<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	function myFunction() {
+		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+	}
+
+	function myFunction() {
+		document.getElementsByClassName("block1")[0].classList.toggle("responsive");
+	}
+
+	/**
+	<!--
+		function openPage(pageName, elmnt, color) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+			document.getElementById(pageName).style.display = "block";
+			elmnt.style.backgroundColor = color;
+		}
+	-->**/
+	// Get the element with id="defaultOpen" and click on it
+
+</script>
+
+</html>
